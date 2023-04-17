@@ -57,16 +57,19 @@ const pizzas = [
 pizzas.forEach( (pizza) => {
     if (pizza.id % 2 !== 0) {
         console.log(pizza);
+
     }
 } );
 
 // Ejercicio B - Responder: ¿Hay alguna pizza que valga menos de $600?
 
 const precioMenorA600 = pizzas.find ( (pizza) => {
-    return pizza.id < 600;    
+    return pizza.precio < 600;    
     }
 );
 
-console.log(precioMenorA600);
+console.log (`La ${precioMenorA600.nombre} tiene un valor de ${precioMenorA600.precio}`);
+
+
 
 
