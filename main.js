@@ -74,5 +74,23 @@ const precioMenorA600 = pizzas.find ( (pizza) => {
 console.log (`La ${precioMenorA600.nombre} tiene un valor de $${precioMenorA600.precio}`);
 
 
+// Ejercicio C - El nombre de cada pizza con su respectivo precio.
+
+pizzas.forEach ( (pizza) => {
+  console.log( `${pizza.nombre} : $${pizza.precio}`);
+});
+
+
+// Ejercicio D - Todos los ingredientes de cada pizza. 
+
+pizzas.forEach ( (pizza) => {
+  console.log(`Ingredientes de ${pizza.nombre}:`);
+  pizza.ingredientes.forEach ( (ingredientes) => {
+    console.log(`${pizza.ingredientes}`);
+  })
+} );
+
+
+
 
 
